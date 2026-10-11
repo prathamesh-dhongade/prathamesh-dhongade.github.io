@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prathamesh Dhongade — Autonomous Mobile Robotics</title>
+<meta name="description" content="Prathamesh Dhongade — M.Sc. Mechatronics student specializing in Autonomous Mobile Robotics. ROS2, Nav2, SLAM, Computer Vision, Sensor Fusion.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="Prathamesh Dhongade — Autonomous Mobile Robotics">
+<meta property="og:description" content="ROS2 · Nav2 · SLAM · Computer Vision · Sensor Fusion — Robotics portfolio">
+<meta property="og:type" content="website">
+
+<link rel="icon" href="data:,">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Skip link -->
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- Loading overlay -->
+<div id="loader" aria-hidden="true">
+  <div class="loader-inner">
+    <span class="loader-bracket">[</span>
+    <span class="loader-text">INITIALIZING</span>
+    <span class="loader-bracket">]</span>
+  </div>
+</div>
+
+<!-- 3D canvas background, hero only -->
+<canvas id="hero-canvas" aria-hidden="true"></canvas>
+
+<!-- Nav -->
+<header class="nav" id="nav">
+  <div class="nav-inner">
+    <a href="#top" class="nav-logo">PD<span class="dot">.</span></a>
+    <nav class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#skills">Skills</a>
+      <a href="#experience">Experience</a>
+      <a href="#projects">Projects</a>
+      <a href="#education">Education</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <a class="nav-cta" href="assets/Prathamesh_Dhongade_CV.pdf" download>Résumé</a>
+    <button class="nav-toggle" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+  <nav class="nav-mobile" id="nav-mobile" aria-label="Mobile">
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact">Contact</a>
+    <a href="assets/Prathamesh_Dhongade_CV.pdf" download>Download Résumé</a>
+  </nav>
+</header>
+
+<main id="main">
+
+  <!-- HERO -->
+  <section class="hero" id="top">
+    <div class="hero-content">
+      <p class="hero-eyebrow"><span class="status-dot"></span> Open to Robotics Internships &amp; Master's Thesis · Based in Ravensburg, Germany</p>
+      <h1 class="hero-title">
+        Prathamesh Dhongade
+      </h1>
+      <p class="hero-subtitle">M.Sc. Mechatronics — <span class="accent">Autonomous Mobile Robotics</span></p>
+      <p class="hero-desc">
+        I build autonomous systems that perceive, map, and navigate the real world —
+        from SLAM pipelines and sensor fusion to full ROS2 navigation stacks running on real hardware.
+      </p>
+      <div class="hero-tags">
+        <span>ROS2</span><span>Nav2</span><span>SLAM</span><span>Computer&nbsp;Vision</span><span>Sensor&nbsp;Fusion</span>
+      </div>
+      <div class="hero-actions">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <a href="assets/Prathamesh_Dhongade_CV.pdf" class="btn btn-ghost" download>Download CV</a>
+      </div>
+      <div class="hero-links">
+        <a href="https://github.com/prathameshdhongade999-lgtm" target="_blank" rel="noopener">GitHub ↗</a>
+        <a href="#" id="linkedin-link" target="_blank" rel="noopener">LinkedIn ↗</a>
+        <a href="mailto:prathameshdhongade999@gmail.com">Email ↗</a>
+      </div>
+    </div>
+    <div class="scroll-cue" aria-hidden="true">
+      <span>Scroll</span>
+      <div class="scroll-line"></div>
+    </div>
+  </section>
+
+  <!-- STATS STRIP -->
+  <section class="stats" aria-label="Highlighted results">
+    <div class="stats-inner">
+      <div class="stat">
+        <span class="stat-num" data-count="92">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">navigation success rate<br>on custom AMR platform</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="45">0</span><span class="stat-suffix">%</span>
+        <span class="stat-label">SLAM compute overhead<br>reduction, same mapping fidelity</span>
+      </div>
+      <div class="stat">
+        <span class="stat-less">&lt;</span><span class="stat-num" data-count="2">0</span><span class="stat-suffix">cm</span>
+        <span class="stat-label">mapping accuracy across<br>10,000 m² indoor environment</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num" data-count="12">0</span><span class="stat-suffix">+</span>
+        <span class="stat-label">robotics projects shipped<br>or in active development</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="section-inner about-grid">
+      <div class="section-head">
+        <img class="profile-photo" src="assets/photos/profile.jpg" alt="Prathamesh Dhongade" width="320" height="320" loading="lazy">
+        <span class="section-kicker">01 — About</span>
+        <h2>Robots that work<br>outside the lab.</h2>
+      </div>
+      <div class="about-body">
+        <p>
+          I'm an M.Sc. Mechatronics student at <strong>RWU Ravensburg-Weingarten</strong>, specializing in
+          Autonomous Mobile Robotics. My work sits at the intersection of perception, navigation, and control —
+          I've spent the last few years building ROS2-based navigation systems, optimizing SLAM pipelines, and
+          fusing LiDAR, camera, and IMU data into robots that can actually handle unstructured, real-world environments.
+        </p>
+        <p>
+          Before my Master's, I worked as a Robotics Systems Engineer and later an Automation Engineer in India,
+          where I deployed navigation systems for industrial inspection robots and designed mobile platforms for
+          autonomous material handling on live production floors — not just simulation. That hands-on, "make it work
+          on the factory floor" experience shapes how I approach every project now.
+        </p>
+        <p>
+          Originally from <strong>Nashik, Maharashtra, India</strong>, I'm now based in Ravensburg, Germany.
+        </p>
+        <p>
+          I'm currently looking for a <strong>Robotics Internship or Master's Thesis</strong> in autonomous systems,
+          robot perception, navigation, or intelligent robotic systems.
+        </p>
+        <div class="about-meta">
+          <div class="meta-block">
+            <h3>Languages</h3>
+            <ul>
+              <li>Marathi — Native (mother tongue)</li>
+              <li>Hindi — Native</li>
+              <li>English — Professional proficiency (IELTS 7.5)</li>
+              <li>German — B2, actively developing</li>
+            </ul>
+          </div>
+          <div class="meta-block">
+            <h3>Outside the lab</h3>
+            <p class="hobbies-text">
+              Cricket, volleyball, and swimming keep me active most weeks. I also love traveling and exploring
+              new places — there's always another city, trail, or culture worth meeting people over.
+            </p>
+          </div>
+        </div>
+        <div class="travel-strip" aria-label="A few places I've traveled to">
+          <img src="assets/photos/travel-eiffel.jpg" alt="Paris, France" loading="lazy" width="320" height="400">
+          <img src="assets/photos/travel-prague.jpg" alt="Prague, Czech Republic" loading="lazy" width="320" height="400">
+          <img src="assets/photos/travel-waterfall.jpg" alt="Krka waterfalls, Croatia" loading="lazy" width="320" height="400">
+          <img src="assets/photos/travel-budapest.jpg" alt="Budapest, Hungary" loading="lazy" width="320" height="400">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SKILLS -->
+  <section class="section section-alt" id="skills">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">02 — Skills</span>
+        <h2>Full navigation-stack coverage.</h2>
+        <p class="section-sub">Perception to control, simulation to hardware.</p>
+      </div>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Robotics &amp; Middleware</h3>
+          <div class="pill-row">
+            <span>ROS2</span><span>ROS</span><span>Nav2</span><span>RViz</span><span>Gazebo</span>
+            <span>MoveIt2</span><span>TurtleBot3</span><span>Nodes/Topics/Services/Actions</span><span>DDS</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Navigation &amp; SLAM</h3>
+          <div class="pill-row">
+            <span>SLAM</span><span>LiDAR SLAM</span><span>Visual SLAM</span><span>AMCL</span>
+            <span>Localization</span><span>Path Planning</span><span>DWA</span><span>RRT</span>
+            <span>Obstacle Avoidance</span><span>ros2_control</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Perception &amp; Computer Vision</h3>
+          <div class="pill-row">
+            <span>OpenCV</span><span>YOLO</span><span>PCL</span><span>Object Detection</span>
+            <span>3D Perception</span><span>LiDAR</span><span>Camera</span><span>IMU</span><span>Sensor Fusion</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Programming</h3>
+          <div class="pill-row">
+            <span>Python (Advanced)</span><span>C++ (Intermediate)</span><span>MATLAB</span>
+            <span>Linux/Ubuntu</span><span>Git</span><span>Docker</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Hardware &amp; Automation</h3>
+          <div class="pill-row">
+            <span>Sensor/Actuator Commissioning</span><span>Control Cabinet Wiring</span>
+            <span>Circuit Diagrams</span><span>SolidWorks</span><span>CAN Bus</span><span>OPC-UA</span>
+          </div>
+        </div>
+        <div class="skill-card">
+          <h3>Safety &amp; Engineering</h3>
+          <div class="pill-row">
+            <span>ISO 13849</span><span>Robotics System Integration</span>
+            <span>Industrial Automation</span><span>CI/CD Pipelines</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE -->
+  <section class="section" id="experience">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">03 — Experience</span>
+        <h2>On real hardware,<br>not just in simulation.</h2>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <h3>Robotics Systems Engineer</h3>
+              <span class="timeline-date">Jun 2023 – Dec 2023</span>
+            </div>
+            <p class="timeline-org">Perfect Measuring Solutions · Pune, India</p>
+            <ul>
+              <li>Built and deployed a ROS-based navigation system for industrial inspection robots operating in unstructured factory environments.</li>
+              <li>Optimised SLAM algorithms, reducing computational overhead by <strong>45%</strong> while maintaining mapping fidelity.</li>
+              <li>Developed a LiDAR + vision sensor-fusion pipeline and authored system architecture documentation used for subsequent field deployments.</li>
+              <li>Produced control-cabinet wiring diagrams and supported hardware commissioning of robotic control components.</li>
+            </ul>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-content">
+            <div class="timeline-top">
+              <h3>Automation Engineer</h3>
+              <span class="timeline-date">Nov 2020 – Nov 2021</span>
+            </div>
+            <p class="timeline-org">ZINC-AL CAST PVT LTD. · Pune, India</p>
+            <ul>
+              <li>Designed and integrated a mobile robot platform for autonomous material handling in dynamic production-line environments.</li>
+              <li>Developed custom path-planning algorithms and connected perception systems to the ROS navigation stack.</li>
+              <li>Participated in commissioning, live testing, and fault diagnosis of automation systems on the factory floor.</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section class="section section-alt" id="projects">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">04 — Projects</span>
+        <h2>Selected robotics projects.</h2>
+        <p class="section-sub">Filter by area to jump to what's relevant.</p>
+      </div>
+
+      <div class="filter-row" id="filter-row">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="nav">Navigation &amp; SLAM</button>
+        <button class="filter-btn" data-filter="perception">Perception</button>
+        <button class="filter-btn" data-filter="manipulation">Manipulation</button>
+        <button class="filter-btn" data-filter="other">Other</button>
+      </div>
+
+      <div class="projects-grid" id="projects-grid">
+        <!-- Cards injected by script.js from PROJECTS data, but kept here as static fallback too -->
+      </div>
+    </div>
+  </section>
+
+  <!-- EDUCATION -->
+  <section class="section" id="education">
+    <div class="section-inner">
+      <div class="section-head">
+        <span class="section-kicker">05 — Education</span>
+        <h2>Foundations in mechanical<br>&amp; mechatronic systems.</h2>
+      </div>
+      <div class="edu-list">
+        <div class="edu-item">
+          <div class="edu-top">
+            <h3>M.Sc. Mechatronics Engineering</h3>
+            <span>2024 – Present</span>
+          </div>
+          <p class="edu-org">Hochschule Ravensburg-Weingarten University (RWU) · Ravensburg, Germany</p>
+          <p class="edu-detail">Specialisation: Autonomous Mobile Robotics</p>
+        </div>
+        <div class="edu-item">
+          <div class="edu-top">
+            <h3>B.E. Mechanical Engineering</h3>
+            <span>2020 – 2023</span>
+          </div>
+          <p class="edu-org">Dr. DY Patil Institute of Technology, Pimpri · Pune, India</p>
+          <p class="edu-detail">Thesis: Autonomous Navigation Systems</p>
+        </div>
+        <div class="edu-item">
+          <div class="edu-top">
+            <h3>Diploma in Mechanical Engineering</h3>
+            <span>2017 – 2020</span>
+          </div>
+          <p class="edu-org">Guru Gobind Singh Polytechnic, Nashik · Nashik, India</p>
+          <p class="edu-detail">Focus: Robotics &amp; Automation</p>
+        </div>
+      </div>
+
+      <div class="pub-achieve">
+        <div class="pub-col">
+          <h3>Publications &amp; Research</h3>
+          <ul>
+            <li>Voice Controlled Robot Using Node-MCU — IRJMETS, Vol. 05, Issue 12, Dec. 2023</li>
+            <li>AI Based Car Parking Allotment System — IRJMETS, Vol. 05, Issue 12, Dec. 2023</li>
+            <li>Optimised Navigation Stack for AMRs — RWU Technical Report, 2025</li>
+            <li>Contributor — Navigation2, ROS2 Open-Source Project, 2024</li>
+          </ul>
+        </div>
+        <div class="pub-col">
+          <h3>Achievements</h3>
+          <ul>
+            <li>Best Robotics Implementation — RWU Hackathon 2024</li>
+            <li>Published 3 ROS2 packages, contributed to the ROS2 ecosystem</li>
+          </ul>
+          <h3 class="interests-head">Research Interests</h3>
+          <div class="pill-row">
+            <span>Autonomous Mobile Robotics</span><span>Robot Navigation</span><span>SLAM</span>
+            <span>Robot Perception</span><span>Computer Vision</span><span>Object Detection</span>
+            <span>Motion Planning</span><span>Sensor Fusion</span><span>Intelligent Robotic Systems</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section class="section contact" id="contact">
+    <div class="section-inner contact-inner">
+      <span class="section-kicker">06 — Contact</span>
+      <h2>Let's build something<br>that navigates the real world.</h2>
+      <p class="section-sub">Open to robotics internships, Master's thesis collaborations, and interesting conversations about autonomous systems.</p>
+      <div class="contact-grid">
+        <a class="contact-card" href="mailto:prathameshdhongade999@gmail.com">
+          <span class="contact-label">Email</span>
+          <span class="contact-value">prathameshdhongade999@gmail.com</span>
+        </a>
+        <a class="contact-card" id="whatsapp-de" href="https://wa.me/4915510383095" target="_blank" rel="noopener">
+          <span class="contact-label">WhatsApp (Germany)</span>
+          <span class="contact-value">Chat on WhatsApp ↗</span>
+        </a>
+        <a class="contact-card" id="whatsapp-in" href="https://wa.me/917887881751" target="_blank" rel="noopener">
+          <span class="contact-label">WhatsApp (India)</span>
+          <span class="contact-value">Chat on WhatsApp ↗</span>
+        </a>
+        <a class="contact-card" href="https://github.com/prathameshdhongade999-lgtm" target="_blank" rel="noopener">
+          <span class="contact-label">GitHub</span>
+          <span class="contact-value">@prathameshdhongade999-lgtm ↗</span>
+        </a>
+        <a class="contact-card" id="linkedin-card" href="#" target="_blank" rel="noopener">
+          <span class="contact-label">LinkedIn</span>
+          <span class="contact-value">Connect with me ↗</span>
+        </a>
+        <div class="contact-card contact-card-static">
+          <span class="contact-label">Location</span>
+          <span class="contact-value">Ravensburg, Germany</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="section-inner footer-inner">
+      <p>© <span id="year"></span> Prathamesh Dhongade — Built with ROS2 energy, deployed on GitHub Pages.</p>
+    </div>
+  </footer>
+
+</main>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
